@@ -32,7 +32,7 @@ $ git push -u origin master
 
 
 
-# You can't push to git://github.com/karnali/dotfiles.git
+# You can't push to github
 
 ```
 $ git remote rm origin
@@ -40,7 +40,7 @@ $ git remote add origin git@github.com:karnali/dotfiles.git
 $ git push -u origin master
 ```
 
-# If git pull from github fails
+# You can't pull to github
 ```
 $ git reset --hard
 $ git pull

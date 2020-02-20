@@ -45,3 +45,24 @@ $ git push -u origin master
 $ git reset --hard
 $ git pull
 ```
+
+# Local and remote git cleanup
+
+Remove git tracking from a project.
+```
+$ cd /Users/jsmith/Desktop/github/dotfiles
+$ rm -rf .git
+```
+Recreate the repos from the current content only ex. /Users/jsmith/dotfiles
+```
+$ git init
+$ git add .
+$ git commit -m "Initial commit"
+```
+
+Push to the github remote repos ensuring you overwrite everything in it
+```
+$  git remote add origin git@github.com:karnali/dotfiles.git
+$  git push -u --force origin master
+```
+
